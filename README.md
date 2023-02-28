@@ -1,6 +1,6 @@
 # typeorm
 
-## Projeto didático Criado para fixar conceitos em Node e ampliar os conhecimentos do ecosistema.
+## Projeto didático criado para fixar conceitos em Node e ampliar os conhecimentos do ecosistema.
 
 
 
