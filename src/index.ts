@@ -3,6 +3,8 @@ import { router } from "./routes";
 const server = express();
 const PORT = 5004;
 
+// Permite o express aceitar json
+server.use(express.json());
 server.use(router);
 
 
