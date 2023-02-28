@@ -1,12 +1,10 @@
 import express, { Request, Response } from "express";
-
+import { router } from "./routes";
 const server = express();
 const PORT = 5004;
 
-server.get("/", (req: Request, res: Response) => {
-    //FUNCIONALIDADES DA ROTA
-    return res.json({ mensagem: "Bem vindo a nossa DIO API" });
-});
+server.use(router);
+
 
 server.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
