@@ -1,8 +1,11 @@
+import "reflect-metadata";
 import express, { Request, Response } from "express";
 import { router } from "./routes";
 const server = express();
 const PORT = 5004;
+import createConnection  from "./database";
 
+createConnection();
 // Permite o express aceitar json
 server.use(express.json());
 server.use(router);
